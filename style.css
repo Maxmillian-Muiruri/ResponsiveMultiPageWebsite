@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   font-family: "poppins", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .header {
   min-height: 100vh;
@@ -24,7 +26,7 @@ nav img {
 }
 
 .nav-links {
-  flex: auto;
+  flex: 1;
   text-align: right;
 }
 
@@ -87,13 +89,14 @@ nav img {
   background: #f44336;
   transition: 1s;
 }
+nav .bi {
+  display: none;
+}
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
   }
-  nav .fa {
-    display: none;
-  }
+
   .nav-links ul li {
     display: block;
   }
@@ -102,14 +105,14 @@ nav img {
     background: #f44336;
     height: 100vh;
     width: 200px;
-    top: 8;
+    top: 0;
     right: -200px;
     text-align: left;
     z-index: 2;
     transition: 1s;
   }
 
-  nav .fa {
+  nav .bi {
     display: block;
     color: #fff;
     margin: 10px;
@@ -128,7 +131,7 @@ nav img {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 10px;
 }
 h1 {
   font-size: 36px;
@@ -219,7 +222,7 @@ h3 {
 }
 /* facilities */
 .facilities {
-  width: 90%;
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -276,7 +279,7 @@ h3 {
   text-align: left;
 }
 
-.testimonials-col fa {
+.testimonials-col .bi {
   color: #f44336;
 }
 @media (max-width: 700px) {
@@ -285,40 +288,35 @@ h3 {
     margin-right: 15px;
   }
 }
-/* callto action */
+/* call to action */
 
 .cta {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
     url(image/banner2.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
 }
 
-.cta h1{
+.cta h1 {
   color: #fff;
   margin-bottom: 40px;
   padding: 0;
 }
-@media (max-width: 700px){
-  .cta h1{
-font-size: 24px;
-
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
   }
-
-
 }
 /* footer" */
 .footer {
-
-width: 100%;
-text-align: center;
-padding: 30px 0;
-
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
 }
 .footer h4 {
   margin-bottom: 25px;
@@ -331,7 +329,20 @@ padding: 30px 0;
   cursor: pointer;
   padding: 18px 0;
 }
-.fa-heart-o {
-color: #f44336;
+.bi-heart {
+  color: #f44336;
+}
 
+.sub-header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(image/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+  margin-top: 100px;
 }
